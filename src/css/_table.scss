@@ -1,0 +1,23 @@
+.table {
+  margin-top: 1rem;
+  overflow-y: scroll;
+  max-height: 20rem;
+  color: black;
+  background-color: white;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+    &:nth-child(odd) {
+      background-color: rgb(233, 232, 238);
+    }
+    td {
+      &:nth-child(2) {
+        font-weight: 600;
+      }
+    }
+  }
+
+
+}
