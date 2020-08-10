@@ -51,7 +51,7 @@ const options = {
   },
 };
 
-const LineGraph = ({ type }) => {
+const LineGraph = ({ type, className }) => {
   const [lineData, setLineData] = useState({});
 
   useEffect(() => {
@@ -73,13 +73,13 @@ const LineGraph = ({ type }) => {
       }
       lastDataPoint = data[type][date];
     }
-    console.log(data)
+    // console.log(data)
     setLineData(chartData)
   }
 
   
   return (
-    <div>
+    <div className={className}>
       {lineData.length && (
         <Line data={{
         datasets: [

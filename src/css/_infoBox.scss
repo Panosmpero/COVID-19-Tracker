@@ -1,0 +1,32 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.infoBox__cases {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(105, 0, 0);
+}
+
+.infoBox__total {
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  margin-top: .5rem !important;
+}
+
+.infoBox__active {
+  border-top: 15px rgb(125, 215, 29) solid;
+}
+
+.infoBox__case {
+  border-color: rgb(204, 16, 52);
+}
+
+.infoBox__death {
+  border-color: rgb(251, 68, 67);
+}
+
